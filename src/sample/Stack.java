@@ -2,7 +2,7 @@ package sample;
 
 public class Stack {
 
-    public static final int ASCII = 48;
+    public static final int ASCII_CODE_ZERO = 48;
     int[] arr = new int[100];
     int lastElementPos = -1;
 
@@ -18,7 +18,7 @@ public class Stack {
     }
 
     public void pushChar(int value){
-        value -= ASCII;
+        value -= ASCII_CODE_ZERO;
         lastElementPos++;
         arr[lastElementPos] = value;
     }

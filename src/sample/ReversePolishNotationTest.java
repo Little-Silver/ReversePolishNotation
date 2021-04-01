@@ -57,8 +57,6 @@ public class ReversePolishNotationTest {
     @ParameterizedTest
     @MethodSource("provideInvalid")
     void testNegativ(String input) {
-        Assertions.assertThrows(IllegalArgumentException.class, () -> {
-            controller.calculate(input);
-        });
+        Assertions.assertThrows(IllegalArgumentException.class, () -> controller.calculate(input));
     }
 }
